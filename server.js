@@ -16,7 +16,7 @@ app.post('/gemini', async (req, res) => {
     const model = genAI.getGenerativeModel({ model: gemini-1.5-flash})
 
     const chat = model startChat({
-        history : req.body.history,
+        history : req.body.history
 
     })
     const msg = req.body.message
